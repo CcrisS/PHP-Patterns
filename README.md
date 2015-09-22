@@ -1,12 +1,14 @@
 # PHP-Patterns
-- Behavioral
-    * MySql
-    * Proxy
-    * State
-    * Strategy
-    * Template
+
 - Creational
-    * Adapter
-    * Decorator
     * Factory
     * Prototype
+    * Adapter
+    * Decorator
+
+- Behavioral
+    * Template
+    * State
+    * Proxy
+    * Strategy
+    * MySql
