@@ -1,11 +1,12 @@
 <?php
 
-include_once('Creator.php');
+include_once('SimpleCreator.php');
 include_once('GraphicProduct.php');
 
-class GraphicFactory extends Creator {
+class GraphicFactory extends SimpleCreator {
 
-    protected function factoryMethod() {
+    public function startFactory() 
+    {
         $product = new GraphicProduct();
         return $product->getProperties();
     }

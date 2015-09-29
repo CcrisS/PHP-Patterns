@@ -9,7 +9,8 @@ class MoldovaProduct implements Product{
     private $formatHelper;
     private $countryNow;
     
-    public function getProperties() {
+    public function getProperties() 
+    {
         $this->countryNow = file_get_contents("CountryWriteups/Moldova.txt");
         $this->formatHelper = new FormatHelper();
         $this->mfgProduct = $this->formatHelper->addTop();
@@ -18,6 +19,7 @@ class MoldovaProduct implements Product{
         $this->mfgProduct .= "<header>Moldova</header>";
         $this->mfgProduct .= "<p>".$this->countryNow."</p>";
         $this->mfgProduct .= $this->formatHelper->closeUp();
+
         return $this->mfgProduct;
     }
     

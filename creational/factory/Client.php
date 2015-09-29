@@ -12,15 +12,16 @@ include_once('MoldovaProduct.php');
 
 class Client {
 
-//    private $someGraphicObject; //1
-//    private $someTextObject; //1
+    // private $someGraphicObject; //1
+    // private $someTextObject; //1
     private $countryFactory;
     
     public function __construct() {
-//        $this->someGraphicObject = new GraphicFactory(); //1
-//        echo $this->someGraphicObject->startFactory() . '<br>'; //1
-//        $this->someTextObject    = new TextFactory(); //1
-//        echo $this->someTextObject->startFactory() . '<br>'; //1
+        // $this->someGraphicObject = new GraphicFactory(); //1
+        // echo $this->someGraphicObject->startFactory() . '<br>'; //1
+        // $this->someTextObject    = new TextFactory(); //1
+        // echo $this->someTextObject->startFactory() . '<br>'; //1
+
         $this->countryFactory = new CountryFactory();
         echo $this->countryFactory->doFactory(new KyrgyzstanProduct());
         echo '<br><hr><br>';
@@ -28,4 +29,5 @@ class Client {
     }
 
 }
+
 $worker = new Client();

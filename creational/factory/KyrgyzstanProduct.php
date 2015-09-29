@@ -8,10 +8,11 @@ class KyrgyzstanProduct implements Product {
     private $mfgProduct;
     private $formatHelper;
 
-    public function getProperties() {
+    public function getProperties() 
+    {
         $this->formatHelper = new FormatHelper();
-        $this->mfgProduct   = $this->formatHelper->addTop();
-        $this->mfgProduct.=<<<KYRGYZSTAN
+        $this->mfgProduct = $this->formatHelper->addTop();
+        $this->mfgProduct .= <<<KYRGYZSTAN
 <img src='Countries/Kyrgyzstan.png' class='pixRight' width='600'
 height='304'>
 <header>Kyrgyzstan</header>
@@ -37,7 +38,8 @@ democratization, endemic corruption, poor interethnic relations,
 and terrorism.
 </p>
 KYRGYZSTAN;
-        $this->mfgProduct.=$this->formatHelper->closeUp();
+        $this->mfgProduct .= $this->formatHelper->closeUp();
+
         return $this->mfgProduct;
     }
 
